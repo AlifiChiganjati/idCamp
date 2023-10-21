@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
 /* import another css */
 @import url("./sections/navbar.css");
+@import url("./sections/hero.css");
 
 :root {
   --poppins: "Poppins", sans-serif;
+  --play-fair: "Playfair Display", serif;
   --dark: #1b262c;
   --white: #eee;
   --primary: #3282b8;
@@ -157,7 +159,7 @@ a {
 }
 
 main {
-  padding-top: 7rem;
+  padding: 6rem 4px 0;
 }
 
 main section {
