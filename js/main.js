@@ -24,3 +24,44 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+const skillData = [
+  {
+    id: 1,
+    name: "HTML",
+    text: "Kerangka dasar dalam pembuatan website berupa tag atau markup.",
+  },
+  {
+    id: 2,
+    name: "CSS",
+    text: "Stylesheet yang digunakan untuk membuat website lebih menarik dengan mengatur tag dari html.",
+  },
+  {
+    id: 3,
+    name: "JavaScript",
+    text: "Bahasa Pemograman yang digunakan untuk membuat website lebih interaktif.",
+  },
+  {
+    id: 4,
+    name: "TailwindCSS",
+    text: "Framework dari CSS yang menggunakan ultilities class.",
+  },
+  {
+    id: 5,
+    name: "ReactJS",
+    text: "Library dari JavaScript yang digunakan untuk membuat website dari segi front-end.",
+  },
+];
+
+const skills = document.querySelector("#skill-select");
+const skillInfo = document.querySelector("#skill-info");
+skillData.forEach((skill) => {
+  const skillContainer = document.createElement("option");
+  skillContainer.text = skill.name;
+  skillContainer.value = skill.text;
+  skills.appendChild(skillContainer);
+});
+
+skills.addEventListener("change", () => {
+  skillInfo.innerText = skills.value;
+});

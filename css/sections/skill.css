@@ -1,0 +1,33 @@
+.skill {
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  width: 100%;
+}
+
+.skill-title {
+  font-size: 3rem;
+  font-family: var(--play-fair);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.skill-icon__container {
+  background: #fff;
+  margin: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  box-shadow: var(--dark) 2px 2px;
+}
+
+.skill-icon__wrapper {
+  display: flex;
+}
+
+.skill-icon__wrapper li {
+  display: flex;
+  margin: 0 0.5rem;
+}

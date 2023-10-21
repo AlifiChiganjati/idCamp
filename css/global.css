@@ -3,6 +3,7 @@
 /* import another css */
 @import url("./sections/navbar.css");
 @import url("./sections/hero.css");
+@import url("./sections/skill.css");
 
 :root {
   --poppins: "Poppins", sans-serif;

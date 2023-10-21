@@ -258,11 +258,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: var(--dark) 1px 1px 1px;
+    transition: 0.3s ease-in-out;
   }
 
   .hero-content__btn:hover {
     background: var(--secondary);
     color: var(--white);
+    box-shadow: var(--dark) 2px 2px 2px;
   }
 
   .hero-profile {
