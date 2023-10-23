@@ -68,10 +68,6 @@ skills.addEventListener("change", () => {
 
 const carousel = document.querySelector(".project-carousel");
 
-let isDragging = false,
-  startX,
-  startScrollLeft;
-
 const arrowBtns = document.querySelectorAll(".project-wrapper i");
 const firstCardWidth = carousel.querySelector(".project-card").offsetWidth;
 

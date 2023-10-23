@@ -99,6 +99,7 @@
 
 
     <section id="project" class="project">
+        <h2 class="project-title">my project</h2>
         <div class="project-wrapper">
           <i id="left" class='bx bxs-chevron-left bx-md'></i>
         <ul class="project-carousel">
@@ -106,7 +107,7 @@
             <!-- <div class="project-img"> -->
               <img src="https://placehold.co/300x300/png" alt="project image" class="project-card__img" />
                 <h3 class="project-card__title"><a href="https://alifichiganjati.github.io/sistem-restoran/" target="_blank" class="project-card__link">sistem restoran</a></h3>
-                <p class="project-card__desc">clone sistem-restoran sederhana </p>
+                <p class="project-card__desc">clone sistem-restoran sederhana dari ambisius coding challenge</p>
             <!-- </div> -->
             </li>
         <li class="project-card">
@@ -157,12 +158,29 @@
         </div>
   </section>
 
-      <section id="contact">contact</section>
+      <section id="contact" class="contact">
+        <h2 class="contact-title">Contact Me</h2>
+        <form class="contact-form">
+          <div class="contact-form__name">
+            <label for="name" class="contact-form__name-label">Nama</label> 
+            <input id="name" type="text" name="nama" id="nama" placeholder="nama" class="contact-form__name-input" required>
+          </div>
+          <div class="contact-form__email">
+            <label for="email" class="contact-form__email-label">Email</label>
+            <input id="email" type="email" name="email" placeholder="email@example.com" class="contact-form__email-input">
+          </div>
+          <div class="contact-form__pesan">
+            <label for="pesan" class="contact-form__pesan-label">Massege</label>
+            <textarea id="pesan" rows="3" cols="" class="contact-form__pesan-input"></textarea>
+          </div>
+          <button type="button" class="contact-form__btn">submit</button>
+        </form>
+      </section>
     </main>
   <!-- main end -->
 
     <!-- footer start -->
-    <footer>
+    <footer class="footer">
 &copy;2023 wesite ini dibuat oleh <span style="color: red;">&#10084</span>  Alifi Chiganjati
     </footer>
     <!-- footer end -->

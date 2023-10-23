@@ -4,6 +4,14 @@
   align-items: center;
   min-height: 100vh;
   padding: 0 35px;
+  flex-direction: column;
+}
+.project-title {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: var(--play-fair);
+  text-transform: uppercase;
+  margin-bottom: 24px;
 }
 .project-wrapper {
   max-width: 1100px;
@@ -43,6 +51,7 @@
   grid-auto-columns: 100%;
   scroll-behavior: smooth;
   overflow-x: auto;
+  gap: 24px;
   padding: 8px;
   scroll-snap-type: x mandatory;
   scrollbar-width: 0;
@@ -74,6 +83,8 @@
   width: 300px;
   text-align: center;
   padding: 20px 12px;
+  text-shadow: var(--dark) 1px 1px 1px;
+  color: var(--black);
 }
 
 .project-card__desc {
