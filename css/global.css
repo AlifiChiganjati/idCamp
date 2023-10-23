@@ -4,6 +4,7 @@
 @import url("./sections/navbar.css");
 @import url("./sections/hero.css");
 @import url("./sections/skill.css");
+@import url("./sections/project.css");
 
 :root {
   --poppins: "Poppins", sans-serif;

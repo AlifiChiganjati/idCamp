@@ -1,0 +1,110 @@
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 35px;
+}
+.project-wrapper {
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
+}
+
+.project-wrapper i {
+  height: 50px;
+  width: 50px;
+  background-color: var(--white);
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: var(--dark) 0 3px 6px;
+}
+
+.project-wrapper i:first-child {
+  left: -24px;
+}
+.project-wrapper i:last-child {
+  right: -24px;
+}
+
+.project-carousel:where(.project-card, .project-card__img) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project-wrapper .project-carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  padding: 8px;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: 0;
+}
+.project-carousel .project-card {
+  scroll-snap-align: start;
+  border-radius: 8px;
+  width: 310px;
+  background-color: #fff;
+  flex-direction: column;
+  box-shadow: var(--secondary) 0 3px 6px;
+}
+.project-card .project-card__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 310px;
+  height: 300px;
+  object-fit: cover;
+  box-shadow: var(--secondary) 1px 1px 1px;
+}
+
+.project-card__title {
+  font-family: var(--play-fair);
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+  width: 300px;
+  text-align: center;
+  padding: 20px 12px;
+}
+
+.project-card__desc {
+  width: 300px;
+  font-family: var(--poppins);
+  font-size: 20px;
+  font-weight: 300;
+  text-align: justify;
+  opacity: 0.6;
+  padding: 8px;
+  transition: all 0.3s ease;
+}
+.project-card__desc:hover {
+  opacity: 1;
+}
+/* @media query  */
+
+/* tablet */
+@media screen and (min-width: 640px) {
+  html {
+    .project-wrapper .porject-carousel {
+      grid-auto-columns: calc((100% / 2) - 8px);
+    }
+  }
+  /* } */
+  /* laptop and desktop */
+  @media screen and (min-width: 1024px) {
+    html {
+      .project-wrapper .project-carousel {
+        grid-auto-columns: calc((100% / 3) - 12px);
+      }
+    }
+  }
+}

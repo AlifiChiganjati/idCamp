@@ -291,7 +291,7 @@
     height: 100%;
     background-size: cover;
     object-fit: cover;
-    scale: 1;
+    scale: 1.02;
   }
 
   .hero-profile__sosmed {

@@ -65,3 +65,18 @@ skillData.forEach((skill) => {
 skills.addEventListener("change", () => {
   skillInfo.innerText = skills.value;
 });
+
+const carousel = document.querySelector(".project-carousel");
+
+let isDragging = false,
+  startX,
+  startScrollLeft;
+
+const arrowBtns = document.querySelectorAll(".project-wrapper i");
+const firstCardWidth = carousel.querySelector(".project-card").offsetWidth;
+
+arrowBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    carousel.scrollLeft += btn.id === "left" ? -firstCardWidth : firstCardWidth;
+  });
+});
